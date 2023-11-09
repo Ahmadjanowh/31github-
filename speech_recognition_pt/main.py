@@ -17,7 +17,7 @@ with sr.Microphone() as source:
 try:
     text = recognizer.recognize_google(audio,language='ru-RU') 
     print("Вы сказали: " + text)
-
+    
 except sr.UnknownValueError:
     print("Извините, не удалось распознать речь")
 except sr.RequestError as e:
